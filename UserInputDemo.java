@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class UserInputDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Take input from User
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter your age = ");
 		int age = scan.nextInt();
@@ -14,10 +14,12 @@ public class UserInputDemo {
 		char gender = scan.next().charAt(0);
 		System.out.println("Enter your salary = ");
 		double salary = scan.nextDouble();
+		// To print data provided by the user 
 		System.out.println("Your name = " + name);
 		System.out.println("Your age = "+ age);
 		System.out.println("Your gender = " + gender);
 		System.out.println("Your salary = " + salary);
+		//release the resources
 		scan.close();
 		
 
